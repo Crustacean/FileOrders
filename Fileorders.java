@@ -48,7 +48,7 @@ class Fileorders{
 	
 	public static void writeTo(Orders o) throws IOException, FileNotFoundException{
 		
-		String filePath = "D:/Study/Java/count";
+		String filePath = "./";
 		
 		File file = new File(filePath);
 		
@@ -58,7 +58,7 @@ class Fileorders{
 		DateTimeFormatter myDate = DateTimeFormatter.ofPattern("YYYYMMdd");
 		String formattedTime =  time.format(myDate);
 		
-		File fileObj = new File("D:/Study/Java/count/orderReceipt_"+formattedTime+"_.txt");
+		File fileObj = new File("./orderReceipt_"+formattedTime+"_.txt");
 		
 		if(!fileObj.exists()){
 			
